@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+
+{% block client %}
+  <h1>Hello, {{ clientNameHTML }}</h1>
+{% endblock client %}
+
+{% block content %}
+    <ul>
+        {% for writerName in writersNamesHTML %}
+            <li><a href="/Library/{{clientNameHTML}}/{{writerName}}">{{ writerName }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

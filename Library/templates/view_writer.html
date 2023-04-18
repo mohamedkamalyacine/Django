@@ -1,0 +1,62 @@
+{% extends 'master.html' %}
+
+{% block client %}
+  <h1>Hello, {{ clientNameHTML }}</h1>
+{% endblock %}
+
+{% block content %}
+  {% if writerNameHTML == 'William Shakspeare' %}
+    <h2>Writer Name : {{ writerNameHTML }}</h2>
+    <div>Born in : April 1564</div>
+    <div>Died in : April 23, 1616</div>
+    <div>Contact : some contacts</div>
+    <h3>Books:</h3>
+    <ul>
+        <li>Hamlet</li>
+        <li>Macbeth</li>
+        <li>Twelfth Night</li>
+    </ul>
+    <div>Bio :</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur ipsum dicta eius modi fugit iusto esse enim voluptate dolores ut, tempora recusandae vitae, soluta laudantium accusamus incidunt, dolorem provident!</p>
+  {% elif writerNameHTML == 'J. K. Rowling' %}
+    <h2>Writer Name : {{ writerNameHTML }}</h2>
+    <div>Born in : July 31, 1965</div>
+    <div>Died in : Alive 57 Years</div>
+    <div>Contact : some contacts</div>
+    <h3>Books:</h3>
+    <ul>
+      <li>Troubled Blood</li>
+      <li>The Ickabog</li>
+      <li>Harry Potter</li>
+    </ul>
+    <div>Bio :</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur ipsum dicta eius modi fugit iusto esse enim voluptate dolores ut, tempora recusandae vitae, soluta laudantium accusamus incidunt, dolorem provident!</p>
+  {% elif writerNameHTML == 'Agatha Cristie' %}
+    <h2>Writer Name : {{ writerNameHTML }}</h2>
+    <div>Born in : September 15, 1890</div>
+    <div>Died in : January 12, 1976</div>
+    <div>Contact : some contacts</div>
+    <h3>Books:</h3>
+    <ul>
+      <li>Death onn the Nile</li>
+      <li>The Man in the Brown Suit</li>
+      <li>The A.B.C Murders</li>
+    </ul>
+    <div>Bio :</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur ipsum dicta eius modi fugit iusto esse enim voluptate dolores ut, tempora recusandae vitae, soluta laudantium accusamus incidunt, dolorem provident!</p>
+  {% else %}
+    <h2>Writer Name : {{ writerNameHTML }} </h2>
+    <div>Born in : December 11, 1911</div>
+    <div>Died in : August 30, 2006</div>
+    <div>Contact : some contacts</div>
+    <h3>Books:</h3>
+    <ul>
+        <li>The Harafish</li>
+        <li>Arabian Nights and Days</li>
+        <li>Palace of Desire</li>
+    </ul>
+    <div>Bio : </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur ipsum dicta eius modi fugit iusto esse enim voluptate dolores ut, tempora recusandae vitae, soluta laudantium accusamus incidunt, dolorem provident!</p>
+  {% endif %}
+  {% comment %} <h2>Writer Name : {{ writerNameHTML }}</h2> {% endcomment %}
+{% endblock %}
